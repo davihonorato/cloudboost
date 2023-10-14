@@ -23,6 +23,34 @@
     }
 }
 
+.form-email {
+    width: 100%;
+    max-width: 52.1rem;
+    
+    .form-box {
+        @include flex(row, center, space-between);
+        gap: 1.8rem;
+        padding: 0.4rem 0.4rem 0.4rem 2.4rem;
+
+        border-radius: 10rem;
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        background: rgba(255, 255, 255, 0.04);
+
+        input {
+            flex-grow: 1;
+
+            background: transparent;
+            outline: none;
+            border: none;
+
+            &::placeholder {
+                color: var(--color-gray-300);
+                line-height: 150%;
+            }
+        }
+    }
+}
+
 .recurso {
     width: 100%;
     max-width: 22.5rem;

@@ -9,15 +9,15 @@
     font-size: 1.6rem;
 }
 
-html, 
-body {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
 html {
     font-size: 62.5%;
     background: linear-gradient(122deg, #030009 -11.05%, #03000A 104.5%);
+    scroll-behavior: smooth;
+}
+
+html, 
+body {
+    overflow-x: hidden;
 }
 
 img {
@@ -27,4 +27,9 @@ img {
 
 a {
     text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
 }
