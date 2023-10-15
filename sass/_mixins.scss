@@ -72,7 +72,7 @@ $breakpoints: (
 
 
 // img positioning
-@mixin positioning($fit, $position: false) {
+@mixin img-positioning($fit, $position: false) {
     width: 100%;
     height: 100%;
     object-fit: $fit;

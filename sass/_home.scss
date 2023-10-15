@@ -1,0 +1,167 @@
+.s-hero {
+    padding-top: 8rem;
+
+    .container {
+
+        .content-hero {
+            @include flex(row, center, space-between);
+            gap: 2.4rem;
+
+            .content-wrapper {
+                flex-grow: 1;
+                max-width: 60rem;
+
+                h1 {
+
+                    span {
+                        color: var(--color-purple-10);
+                        text-decoration: underline;
+                    }
+                }
+
+                & > p {
+                    margin-top: 1.6rem;
+                    max-width: 49.1rem;
+
+                    color: var(--color-gray-200);
+                    font-size: 2.2rem;
+                    line-height: 150%;
+                }
+
+                .form-email {
+                    margin-top: 3.2rem;
+                }
+
+                .social-media {
+                    @include flex(row, flex-start, space-between);
+                    gap: 2.57rem;
+                    max-width: 33.9rem;
+                    margin-top: 4.8rem;
+
+                    list-style: none;
+                }
+
+                .review-wrapper {
+                    @include flex(row, center, space-between);
+                    gap: .95rem;
+                    max-width: 28.6rem;
+                    margin-top: 4.8rem;
+                    
+                    .reviews {
+                        @include flex(row, center, space-between);
+                        list-style: none;
+
+                        li {
+                            width: 4rem;
+                            height: 4rem;
+                            border-radius: 100%;
+                            border: 2px solid #030008;
+                            background: lightgray -13.595px 0px / 150% 100% no-repeat;
+
+                            overflow: hidden;
+
+                            &:not(:first-child) {
+                                margin-left: -1.2rem
+                            }
+
+                            img {
+                                @include img-positioning(cover);
+                            }
+                        }
+                    }
+
+                    .content {
+                        @include flex(row, center, space-between);
+                        gap: .3rem;
+
+                        img {
+                            width: 2.4rem;
+                            height: 2.4rem;
+                        }
+
+                        p {
+                            color: var(--color-gray-100);
+                            font-size: 1.8rem;
+                            font-weight: 600;
+                            line-height: 150%;
+
+                            span {
+                                color: var(--color-gray-600);
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .img-box {
+                max-width: 59.2rem;
+            }
+        }
+
+        hr {
+            margin-top: 9.7rem;
+        }
+    }
+}
+
+.s-recursos {
+    padding-top: 8rem;
+
+    .container {
+
+        .title-area {
+            @include flex(row, center, space-between);
+            gap: 2.4rem;
+
+            h2 {
+                max-width: 78.7rem;
+                letter-spacing: -0.12rem;
+            }
+
+            p {
+                color: var(--color-gray-200, #DFE1E8);
+                line-height: 150%; /* 2.4rem */
+            }
+        }
+
+        .recursos-wrapper {
+            @include flex(row, flex-start, space-between);
+            gap: 1.6rem;
+            margin-top: 8rem;
+        }
+
+        hr {
+            margin-top: 10.4rem;
+        }
+    }
+}
+
+.s-marketing {
+    padding: 9.6rem 0 12.6rem;
+
+    .container {
+
+        .box {
+            padding: 8.4rem 2.4rem;
+            border-radius: 1rem;
+            background: url('../assets/bg-box.svg') no-repeat center, linear-gradient(93deg, #4320C3 -4.63%, #3D11DB 105.14%);
+
+            .content {
+                text-align: center;
+                width: 100%;
+                max-width: 78.6rem;
+                margin: 0 auto;
+
+                p {
+                    margin: .8rem auto 0;
+                    max-width: 50.1rem;
+                }
+
+                .btn {
+                    margin-top: 3.2rem;
+                }
+            }
+        }
+    }
+}

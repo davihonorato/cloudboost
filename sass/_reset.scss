@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 
-    color: var(--gray-100);
+    color: var(--color-gray-100);
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-size: 1.6rem;
@@ -12,12 +12,8 @@
 html {
     font-size: 62.5%;
     background: linear-gradient(122deg, #030009 -11.05%, #03000A 104.5%);
-    scroll-behavior: smooth;
-}
-
-html, 
-body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 img {

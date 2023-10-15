@@ -5,16 +5,17 @@
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 150%;
+    text-align: center;
 
     border-radius: 100px;
     border: 1px solid rgba(255, 255, 255, 0.16);
-    background: var(--purple-10);
+    background: var(--color-purple-10);
 
     transition: all .4s ease;
 
     &:hover {
         cursor: pointer;
-        background: var(--purple-20);
+        background: var(--color-purple-20);
         border-color: rgba(255, 255, 255, 0.01);
     }
 
@@ -53,7 +54,7 @@
 
 .recurso {
     width: 100%;
-    max-width: 22.5rem;
+    max-width: 26.4rem;
 
     .icon-box {
         width: 4.8rem;
@@ -84,4 +85,9 @@
             line-height: 150%;
         }
     }
+}
+
+hr {
+    border-width: .1rem;
+    border-color: rgba(255, 255, 255, 0.10);
 }
