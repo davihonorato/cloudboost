@@ -30,6 +30,11 @@
                     </a>
                     <a href="#" class="btn">Testar gratis</a>
                 </div>
+                <div class="btn-hamburger">
+                    <button type="menu" name="botão hamburger">
+                        <img src="./assets/icon-hamburger.svg" alt="botão hamburger">
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -79,9 +84,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="img-box">
+                    <!-- <div class="img-box">
                         <img src="./assets/main-image.png" alt="">
-                    </div>
+                    </div> -->
+                    <picture class="img-box">
+                        <source srcset="./assets/main-image-mobile.png" media="(max-width: 560px)">
+                        <source srcset="./assets/main-image.png">
+                        <img src="./assets/main-image.png" alt="Mulher trabalhando">
+                      </picture>
                 </div>
                 <hr>
             </div>

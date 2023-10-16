@@ -47,6 +47,44 @@ header {
                     }
                 }
             }
+
+            .btn-hamburger {
+                display: none;
+                max-width: 2.4rem;
+                overflow: hidden;
+            }
+        }
+    }
+
+    @include responsive('md') {
+
+        .container {
+
+            .header-box {
+                padding: 2rem 2.6rem;
+
+                .buttons-wrapper {
+                    display: none;
+                }
+    
+                .btn-hamburger {
+                    @include flex(row, center);
+                }
+            }
+
+        }
+    }
+
+    @include responsive(560px) {
+
+        .container {
+
+            .header-box {
+
+                .logo {
+                    max-width: 13.5rem;
+                }
+            }
         }
     }
 }
